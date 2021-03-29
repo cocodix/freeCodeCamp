@@ -31,11 +31,15 @@ body {
   overflow-y: scroll;
 }
 
-h1 {
+#title {
   font-size: 3em;
   font-family: 'Bebas Neue', cursive;
   color: aliceblue;
   text-transform: uppercase;
+  text-align: center;
+}
+
+#description {
   text-align: center;
 }
 
