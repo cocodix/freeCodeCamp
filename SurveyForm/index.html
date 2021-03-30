@@ -15,7 +15,46 @@
         <p id="description">Movie and TV viewing survey</p>
 
         <form action="" id="survey-form">
-            <input type="text" name="" id="name" placeholder="Please enter your name">
+            <label for="name" id="name-label">Please enter your name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+            <label for="email" id="email-label">Please enter your e-mail adress</label>
+            <input type="email" name="email" id="email" placeholder="johnDoe@gmail.com" required>
+            <label for="number" id="number-label">Rate your last watched movie with rating 1-10</label>
+            <input type="number" name="movie-rating" id="number" min="1" max="10" placeholder="1-10">
+            <label for="dropdown">What is your favorite kind of movie</label>
+            <select name="movie-kind" id="dropdown">
+                <option value="documentary">Documentary</option>
+                <option value="action">Action</option>
+                <option value="horror">Horror</option>
+                <option value="drama">Drama</option>
+                <option value="romance">Romance</option>
+                <option value="comedy">Comedy</option>
+                <option value="SF">Science-Fiction</option>
+                <option value="thriller">Thriller</option>
+            </select>
+            <div class="cont">
+                <label>How often do you watch television shows</label>
+                <input type="radio" name="watch" id="e-often" value="e-often">
+                <label for="e-often">Extremely often</label>
+                <input type="radio" name="watch" id="v-often" value="v-often">
+                <label for="v-often">Very often</label>
+                <input type="radio" name="watch" id="s-often" value="s-often">
+                <label for="s-often">Slightly often</label>
+                <input type="radio" name="watch" id="n-often" value="n-often">
+                <label for="n-often">Not at all often</label>
+            </div>
+            <div class="cont2">
+                <label for="">Choose one or more actresses you like</label>
+                <input type="checkbox" name="actresses" id="Charlize-Theron" value="Charlize-Theron">
+                <label for="Charlize-Theron">Charlize Theron</label>
+                <input type="checkbox" name="actresses" id="Scarlett-Johansson" value="Scarlett-Johansson">
+                <label for="Scarlett-Johansson">Scarlett Johansson</label>
+                <input type="checkbox" name="actresses" id="Jessica-Alba" value="Jessica-Alba">
+                <label for="Jessica-Alba">Jessica Alba</label>
+            </div>
+            <label for="comment">IF you have something to add, please write it down</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <input type="submit" value="SUBMIT" id="submit">
         </form>
 
     </div>
