@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: khaki;
+  /* height: 30px; */
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li a {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:hover {
+  background-color: cadetblue;
+}
