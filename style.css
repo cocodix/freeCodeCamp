@@ -37,3 +37,20 @@ li a {
 li a:hover {
   background-color: cadetblue;
 }
+
+@media screen and (max-width: 740px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
