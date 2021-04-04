@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: cadetblue;
+  background-color: #191a2b;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-  background-color: khaki;
+  background-color: #0b0d1f;
   /* height: 30px; */
   padding-left: 10px;
   display: flex;
@@ -31,7 +31,7 @@ li a {
   display: block;
   padding: 10px 10px;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 li a:hover {
