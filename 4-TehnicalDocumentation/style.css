@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 15vh 4fr 30px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+header {
+  padding: 5px 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  padding: 5px 10px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+code {
+  width: 90%;
+  padding: 10px 0;
+  padding-left: 20px;
+  margin: 10px auto;
+  background-color: grey;
+  color: #fff;
+  display: block;
+}
+
+#navbar {
+  padding: 10px 0;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 10px 20px 10px 0;
+  transition: all 1s ease-out;
+}
+
+.nav-link:hover {
+  background-color: rgb(27, 27, 27);
+  color: #fff;
+}
+
+#main-doc {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-left: 4px double #fff;
+}
+
+#Tech_data ul {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  #main-doc {
+    border-top: 4px double #fff;
+    border-left: none;
+  }
+}
