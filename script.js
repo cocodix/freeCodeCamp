@@ -164,5 +164,3 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 console.log('Slice and Splice: ', frankenSplice([1, 2, 3], [4, 5, 6], 1));
-
-// frankenSplice([1, 2, 3], [4, 5], 1) should return [4, 1, 2, 3, 5].
