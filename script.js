@@ -164,3 +164,56 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 console.log('Slice and Splice: ', frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+//* *** Falsy Bouncer ***
+
+function bouncer(arr) {
+  let filered = [];
+  arr.forEach((el) => {
+    if (el) {
+      filered.push(el);
+    }
+  });
+  return filered;
+}
+
+console.log('Falsy Bouncer: ', bouncer([7, 'ate', '', false, 9]));
+
+//* *** Where do I Belong ***
+
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+  for (let i = 0; i < arr.length; i++) {
+    if (num <= arr[i]) {
+      return i;
+    }
+  }
+  return arr.length;
+}
+
+console.log('Where do I Belong: ', getIndexToIns([], 15));
+
+//* *** Mutations ***
+
+function mutation(arr) {
+  for (let i = 0; i < arr[1].length; i++) {
+    if (arr[0].toLowerCase().indexOf(arr[1][i].toLowerCase()) < 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log('Mutations: ', mutation(['zyxwvutsrqponMLKjihgfedcba', 'qrstu']));
+
+//* *** Chunky Monkey ***
+
+function chunkArrayInGroups(arr, size) {
+  let newArr = [];
+  while (arr.length > 0) {
+    newArr.push(arr.splice(0, size));
+  }
+  return newArr;
+}
+
+console.log('Chunky Monkey: ', chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2));
